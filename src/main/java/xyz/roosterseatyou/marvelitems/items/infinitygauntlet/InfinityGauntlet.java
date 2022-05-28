@@ -26,6 +26,7 @@ public class InfinityGauntlet {
         meta.displayName(NAME);
         lore.add(Component.text("Perfectly balanced, as all things should be."));
         lore.add(Component.text(UUID.randomUUID().toString()).color(TextColor.color(46, 44, 44)));
+        lore.add(Component.text("SERVER_ID: INF_GAUNTLET").color(TextColor.color(46, 44, 44)));
         meta.lore(lore);
         item.setItemMeta(meta);
         INF_GAUNTLET = item;
