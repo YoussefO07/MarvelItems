@@ -1,0 +1,6 @@
+name: MarvelItems
+version: '${project.version}'
+main: xyz.roosterseatyou.marvelitems.MarvelItems
+api-version: 1.18
+authors: [ Roosterseatyou, YoussefO07 ]
+description: Plugin based off of the MCU
