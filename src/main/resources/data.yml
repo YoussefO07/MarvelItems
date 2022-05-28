@@ -1,0 +1,19 @@
+infinity-stones:
+  power:
+    has-been-found: false
+    has-been-used: false
+  time:
+    has-been-found: false
+    has-been-used: false
+  reality:
+    has-been-found: false
+    has-been-used: false
+  mind:
+    has-been-found: false
+    has-been-used: false
+  soul:
+    has-been-found: false
+    has-been-used: false
+  space:
+    has-been-found: false
+    has-been-used: false
