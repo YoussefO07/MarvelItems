@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class TimeStone {
-    public static final Component NAME = Component.text("Time Stone");
-    public static ItemStack TIME_STONE;
+public class SoulStone {
+    public static final Component NAME = Component.text("Soul Stone");
+    public static ItemStack SOUL_STONE;
 
     public static ItemStack init() {
         getItem();
@@ -20,20 +20,20 @@ public class TimeStone {
     }
 
     public static void getItem() {
-        ItemStack item = new ItemStack(Material.GREEN_DYE);
+        ItemStack item = new ItemStack(Material.YELLOW_DYE);
         ItemMeta meta = item.getItemMeta();
         List<Component> lore = new ArrayList<>();
         meta.displayName(NAME);
-        lore.add(Component.text("A glowing green gem with the power to turn back the sands of time."));
+        lore.add(Component.text("A golden gemstone gifted to those who have made a great sacrifice."));
         lore.add(Component.text(UUID.randomUUID().toString()).color(TextColor.color(46, 44, 44)));
-        lore.add(Component.text("SERVER_ID: TIME_STONE").color(TextColor.color(46, 44, 44)));
+        lore.add(Component.text("SERVER_ID: Soul_STONE").color(TextColor.color(46, 44, 44)));
         meta.lore(lore);
         item.setItemMeta(meta);
-        TIME_STONE = item;
+        SOUL_STONE = item;
     }
 
     public static ItemStack genItem() {
-        ItemStack it = TIME_STONE.clone();
+        ItemStack it = SOUL_STONE.clone();
         ItemMeta meta = it.getItemMeta();
         List<Component> lore = meta.lore();
         lore.set(1, Component.text(UUID.randomUUID().toString()).color(TextColor.color(46, 44, 44)));
@@ -42,4 +42,5 @@ public class TimeStone {
         return it;
     }
 }
+
 
